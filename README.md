@@ -1,15 +1,19 @@
-# laba6-11
 ## Visual Studio 2022 
 <b>WPF 6.0 Net</b>
+
+Simple application, made as a large laboratory work for the subject "Database and DBMS"
 
 Using:
 - BoldReports
 - DocumentFormat.OpenXmlSDK
 - HandyControls
 - LiveCharts.Wpf
+- MSSQL
+- Report Builder
+- SQL Server Managment Studio
 
-
-## Screenshots:
+___
+## Screenshots App:
 
 ![image](https://github.com/FxFurEN/broadcaster-app/assets/114875125/9c715279-5560-428c-8b9f-040e65e4fcc0)
 
@@ -25,3 +29,7 @@ Using:
 
 ![image](https://github.com/FxFurEN/broadcaster-app/assets/114875125/65052dc2-6055-4619-8266-8649ce115aae)
 
+___
+##  Screenshots DB:
+
+![image](https://github.com/FxFurEN/broadcaster-app/assets/114875125/77810483-ec44-4bfb-86b2-31e36799b55b)
