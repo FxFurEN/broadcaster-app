@@ -1,0 +1,23 @@
+﻿<Window x:Class="laba6_11.AddAgentsPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:laba6_11"
+        mc:Ignorable="d"
+        Title="AddAgentsPage" Height="189" Width="545">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="292*"/>
+            <ColumnDefinition Width="253*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="FIOTextBox"  Margin="0,34,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="262"  />
+        <TextBox x:Name="GeneralTimeTextBox" VerticalAlignment="Top" HorizontalAlignment="Center" Width="259" Margin="0,94,0,0" />
+        <ComboBox Name="ZakazchikComboBox" Margin="0,34,10,0" DisplayMemberPath="Value" SelectedValuePath="Key" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1" Width="217"/>
+
+        <Button Content="Добавить" Click="AddButton_Click" Margin="0,123,10,0" VerticalAlignment="Top" Grid.Column="1" Width="214" HorizontalAlignment="Right" />
+        <Label Width="139" VerticalAlignment="Top" Content="ФИО" Background="{x:Null}" BorderBrush="White" Height="34"/>
+        <Label Width="214" VerticalAlignment="Top" Content="Общее время рекламы" Background="{x:Null}" BorderBrush="White" Height="34" Margin="0,62,0,0"/>
+        <Label Width="224" VerticalAlignment="Top" Content="Заказчики" Background="{x:Null}" BorderBrush="White" Height="34" Grid.Column="1"/>
+    </Grid>
+</Window>

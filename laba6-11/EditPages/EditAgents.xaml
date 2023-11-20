@@ -1,0 +1,17 @@
+﻿<Window x:Class="laba6_11.EditAgents"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:laba6_11"
+        mc:Ignorable="d"
+        Title="EditAgents" Height="189" Width="545">
+    <Grid>
+        <TextBox x:Name="FIOTextBox"  Margin="21,10,300,123"  />
+        <TextBox x:Name="GeneralTimeTextBox"  Margin="21,65,300,65" />
+        <ComboBox Name="ZakazchikComboBox" Margin="290,24,10,101" DisplayMemberPath="Value" SelectedValuePath="Key">
+        </ComboBox>
+
+        <Button Content="Изменить" Click="SaveButton_Click" Margin="21,118,190,10" />
+    </Grid>
+</Window>

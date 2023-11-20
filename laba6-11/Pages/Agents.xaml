@@ -1,0 +1,37 @@
+﻿<Window x:Class="laba6_11.Agents"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:laba6_11"
+        mc:Ignorable="d"
+        Title="Agents" Height="450" Width="920">
+    <Grid>
+        <DataGrid x:Name="agentDataGrid" CanUserAddRows="False" AutoGenerateColumns="False" MouseDoubleClick="AgentDataGrid_MouseDoubleClick" Height="395" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="761" SelectionChanged="agentDataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ФИО агента" Binding="{Binding AgentName}" />
+                <DataGridTextColumn Header="Общее время реклам" Binding="{Binding GTSO}" />
+                <DataGridTextColumn Header="ФИО заказчика" Binding="{Binding CustomerName}" />
+                <DataGridTemplateColumn Header="Actions">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Delete" Click="DeleteButton_Click" Tag="{Binding ID_agent}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Width="123" HorizontalAlignment="Left" Margin="786,159,0,0" VerticalAlignment="Top" Content="Сортировка" Background="{x:Null}" BorderBrush="White"/>
+        <Button Content="Добавить агента" Click="OpenAddPage_Click" Margin="662,39,20,345" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Button Content="Отчет" Click="OpenReportPage_Click" Margin="0,72,18,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="115"/>
+        <ComboBox Name="comboBoxSearch2" SelectedIndex="0" HorizontalAlignment="Right" Margin="0,192,13,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="searchTextBox" TextChanged="searchTextBox_TextChanged" HorizontalAlignment="Right" Margin="0,231,13,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Круговая" Click="OpenCharts1Page_Click" Margin="0,333,15,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Столбцы" Click="OpenCharts2Page_Click" Margin="0,372,15,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Назад" Click="OpenMainPage_Click" Margin="10,6,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90"/>
+        <Label Width="123" HorizontalAlignment="Left" Margin="784,300,0,0" VerticalAlignment="Top" Content="Диаграммы" Background="{x:Null}" BorderBrush="White"/>
+        <Button Content="Договор" Click="Button_Click_2" Margin="130,6,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90"/>
+    </Grid>
+
+</Window>
+    
