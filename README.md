@@ -1,13 +1,15 @@
-## Visual Studio 2022 
-<b>WPF 6.0 Net</b>
+## broadcaster-app
 
 Simple application, made as a large laboratory work for the subject "Database and DBMS"
 
 Using:
 - BoldReports
-- DocumentFormat.OpenXmlSDK
+- DocumentFormat
+- WPF
+- 6.0 Net
 - HandyControls
-- LiveCharts.Wpf
+- LiveCharts
+- Visual Studio 2022 
 - MSSQL
 - Report Builder
 - SQL Server Managment Studio
